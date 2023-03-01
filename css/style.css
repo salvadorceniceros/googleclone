@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #202124;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: end;
+    height: 60px;
+    /* background-color: teal; */
+    padding: 0 12px;
+}
+
+header .options{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    /* background-color: indigo; */
+}
+
+header .options a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+header .options a img{
+    height: 24px;
+    width: 24px;
+    border-radius: 100%;
+}
+
+.dots-logo{
+    display: inline-block;
+    background-image: url(/assets/dots-logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 24px;
+    width: 24px
+}
+
+.search-logo{
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    background-image: url(/assets/search-logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.micro-logo{
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    background-image: url(/assets/micro-logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.camera-logo{
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    background-image: url(/assets/camera-logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+main{
+    height: calc(100% - 20% - 4%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: teal; */
+}
+
+main .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    /* background-color: indigo; */
+}
+
+main .container figure{
+    height: 92px;
+}
+main .container figure img{
+    height: 100%;
+}
+
+main .container .searcher{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    height: 40px;
+    width: 450px;
+    /* background-color: teal; */
+    padding: 8px 12px;
+    border: 1px solid gray;
+    border-radius: 24px;
+}
+
+main .container .searcher input{
+    width: 100%;
+    border: none;
+    background-color: whitesmoke;
+    color: #202124;
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 10px;
+    border-color: transparent;
+}
+
+main .container .searcher input:hover{
+    background-color: blanchedalmond;
+}
+
+main .container .searcher button{
+    border: none;
+    background-color: transparent;
+}
+
+main .container .searcher-buttons button:hover{
+    background-color: rgb(120, 120, 120);
+    color: blanchedalmond;
+    
+}
+
+main .container .searcher-buttons button{
+    background-color: #303134;
+    border: none;
+    border-radius: 4px;
+    padding: 12px;
+    color: whitesmoke;
+}
+
+main .container .searcher-buttons{
+    display: flex;
+    gap: 10px;
+}
+
+main .container p{
+    font-size: small;
+    color: whitesmoke;
+}
+
+footer{
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    background-color: #3f3e3e;
+    padding: 0 30px;
+    padding: 0 30px;
+}
+
+footer section{
+    display: flex;
+    align-items: center;
+    height: 50%;
+    color: #999da2;
+}
+
+footer section.more-info{
+    border-top: 1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer section.more-info div{
+    display: flex;
+    gap: 18px
+}
+footer section.more-info div a{
+    text-decoration: none;
+    color: whitesmoke;
+}
